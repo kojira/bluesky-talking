@@ -8,4 +8,4 @@ HTTPサーバーで開いてください。アプリのコードはMIT（LICENSE
 
 音声モデル：Blueskyちゃん（https://github.com/kojira/zen-tts-models ）／ ZEN-TTS（https://zenryokukikai.com ）
 
-ZEN-TTS 1.3.0 https://github.com/zenryokukikai/zen-tts/tree/v1.3.0 のライセンス https://github.com/zenryokukikai/zen-tts/blob/v1.3.0/LICENSE.md に従い、画面に必須クレジットを表示します。ランタイムは改変せずTypeScriptからコンパイルしたものをアプリに組み込みます。G2PとWASMは公式GitHubをjsDelivr経由で、声モデルは作者のHugging Face https://huggingface.co/kojira/zen-tts-models から読み込みます。ZEN-TTSの公式READMEはnpm公開なし、GitHub依存からのビルドを案内しています。jsDelivrは公式運営CDNではありません。音声モデルのライセンス https://huggingface.co/kojira/zen-tts-models/blob/main/LICENSE.md 。
+ZEN-TTS 1.3.0 https://github.com/zenryokukikai/zen-tts/tree/v1.3.0 のライセンス https://github.com/zenryokukikai/zen-tts/blob/v1.3.0/LICENSE.md に従い、画面に必須クレジットを表示します。ランタイムはTypeScriptからコンパイルしたものをアプリに組み込み、`dist/runtime/model-fetch.js` のみキャッシュ対応に改変しています。G2PとWASMは公式GitHubをjsDelivr経由で、声モデルは作者のHugging Face https://huggingface.co/kojira/zen-tts-models から読み込みます。ZEN-TTSの公式READMEはnpm公開なし、GitHub依存からのビルドを案内しています。jsDelivrは公式運営CDNではありません。音声モデルのライセンス https://huggingface.co/kojira/zen-tts-models/blob/main/LICENSE.md 。
