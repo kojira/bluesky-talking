@@ -2,7 +2,16 @@ import { ZenTts } from './vendor/zenryokukikai-zen-tts-38773bf/dist/index.js';
 const $=id=>document.getElementById(id), input=$('text'), status=$('status'), speak=$('speak'), stop=$('stop'), portrait=$('portrait');
 const initial=new URLSearchParams(location.search).get('text'); if(initial!==null)input.value=initial.slice(0,300);
 let tts,context,source,frame,run=0;
-function mouth(level=0){const doc=portrait.contentDocument;if(!doc)return;const open=doc.getElementById('mouth-open'),tongue=doc.getElementById('tongue');if(!open||!tongue)return;const h=2+Math.round(42*Math.max(0,Math.min(1,level)));const half=Math.floor(h/2);open.setAttribute('ry',String(half/0.8));if(h>7){const top=519+Math.max(2,Math.floor(h/6)),bottom=519+half-2;tongue.setAttribute('cy',String((top+bottom)/1.6));tongue.setAttribute('ry',String(Math.max(0.1,(bottom-top)/1.6)));tongue.setAttribute('opacity','1')}else tongue.setAttribute('opacity','0');}
+function mouth(level=0){
+ const doc=portrait.contentDocument;if(!doc)return;
+ const open=doc.getElementById('mouth-open'),tongue=doc.getElementById('tongue');if(!open||!tongue)return;
+ const amount=Math.max(0,Math.min(1,level));
+ const half=1.25+26.25*amount;
+ open.setAttribute('ry',String(half));
+ // 舌は口の内部の下側にのみ配置する。
+ if(half>5){const tongueHalf=Math.min(half*.22,5);tongue.setAttribute('cy',String(648.75+half*.55));tongue.setAttribute('ry',String(tongueHalf));tongue.setAttribute('opacity','1')}
+ else tongue.setAttribute('opacity','0');
+}
 function cancel(){run++;if(source){try{source.stop()}catch{}source=null}cancelAnimationFrame(frame);mouth();stop.disabled=true;speak.disabled=false;}
 stop.onclick=()=>{cancel();status.textContent='停止しました。'};
 speak.onclick=async()=>{const text=input.value.trim();if(!text){status.textContent='お話しする言葉を入力してください。';return}cancel();const id=run;speak.disabled=true;stop.disabled=false;try{
