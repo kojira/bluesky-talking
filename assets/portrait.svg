@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+<title>Blueskyちゃんの自画像</title><desc>公式プロフィール画像を参照した、灰青色の長い髪と大きな帽子、青い花の瞳の肖像。</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#102d48"/><stop offset=".55" stop-color="#166d95"/><stop offset="1" stop-color="#1a3c56"/></linearGradient>
+ <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#779da6"/><stop offset=".42" stop-color="#918b9e"/><stop offset=".75" stop-color="#71849a"/><stop offset="1" stop-color="#a8e0d4"/></linearGradient>
+ <linearGradient id="skin" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#ffd6d7"/><stop offset=".48" stop-color="#efa9ba"/><stop offset="1" stop-color="#cf8d9f"/></linearGradient>
+ <radialGradient id="iris"><stop stop-color="#5bc9ed"/><stop offset=".7" stop-color="#1987c4"/><stop offset="1" stop-color="#225578"/></radialGradient>
+ <linearGradient id="hat" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f8e6d4"/><stop offset=".23" stop-color="#e7b7bc"/><stop offset=".6" stop-color="#a99b95"/><stop offset="1" stop-color="#c9b6ad"/></linearGradient>
+</defs>
+<!-- AT Protocolにちなむ巨大な@。人物と帽子の背後で画面外へ続く -->
+<rect width="1000" height="1000" fill="url(#sky)"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M255 211 C34 216 -84 379 -58 604 C-35 811 110 936 315 929 C433 925 524 873 579 807" stroke="#70d8ed" stroke-width="78" opacity=".72"/>
+ <path d="M255 211 C34 216 -84 379 -58 604 C-35 811 110 936 315 929 C433 925 524 873 579 807" stroke="#d5f8fa" stroke-width="8" opacity=".46"/>
+ <path d="M348 471 C295 415 204 424 155 485 C103 550 107 648 165 694 C222 738 302 711 335 648 L350 455 L336 639 C329 719 380 738 425 697" stroke="#70d8ed" stroke-width="60" opacity=".72"/>
+</g>
+<!-- 大きな帽子は髪の背後 -->
+<path d="M0 0H1000V613 Q931 579 874 514 Q792 423 658 379 Q531 346 397 365 Q204 401 89 309 Q13 251 0 193Z" fill="url(#hat)" stroke="#725f70" stroke-width="5"/>
+<path d="M714 0 Q813 116 1000 165 L1000 227 Q825 174 669 0Z" fill="#d89aa6"/>
+<path d="M761 0 Q852 97 1000 136" fill="none" stroke="#fff4d9" stroke-width="12"/>
+<!-- 髪の後ろ側、長く豊かに -->
+<path d="M277 361 Q297 164 454 132 Q604 89 758 144 Q928 207 945 418 Q941 640 1000 758 L1000 1000 H307 Q344 914 354 826 Q379 757 332 671 Q253 561 277 361Z" fill="url(#hair)" stroke="#526775" stroke-width="6"/>
+<path d="M847 425 Q843 713 975 846 L1000 881 L1000 1000 H879 Q831 899 813 763Z" fill="#b1ded8" opacity=".72"/>
+<path d="M341 410 Q298 560 284 674 Q273 754 332 780 Q387 795 402 839 Q413 898 374 947 Q326 982 300 952 Q272 918 307 880 Q341 842 327 822 Q296 793 256 804 Q187 823 163 770 Q140 716 172 631 L254 405Z" fill="url(#hair)" stroke="#607781" stroke-width="6"/>
+<path d="M215 704 Q190 778 240 788 Q287 799 320 775 M316 941 Q298 914 333 872 Q358 844 350 822" fill="none" stroke="#c8f1e4" stroke-width="15" opacity=".68"/>
+<!-- 首と肩 -->
+<path d="M516 716 Q569 769 548 837 Q541 864 511 879 Q439 869 401 874 Q337 884 308 1000 H963 Q962 924 923 906 Q884 886 784 868 Q721 858 710 819 Q703 792 716 697Z" fill="url(#skin)" stroke="#775668" stroke-width="6"/>
+<path d="M536 846 Q571 821 557 759 L661 744 Q663 815 638 849 Q606 882 536 884Z" fill="#b87e90" opacity=".42"/>
+<!-- 顔と耳 -->
+<path d="M311 362 Q314 248 420 201 Q544 151 698 193 Q820 225 839 360 Q851 423 840 466 Q868 440 897 463 Q932 490 921 548 Q915 604 879 625 Q847 641 821 622 Q797 615 779 642 Q739 700 663 738 Q578 790 515 778 Q458 763 392 709 Q305 640 294 572 Q284 489 311 362Z" fill="#f0abbb" stroke="#76586b" stroke-width="6"/>
+<path d="M851 495 Q879 471 897 498 Q914 523 899 557 Q889 580 867 583 Q840 598 816 605 Q807 606 818 589 Q836 566 828 548" fill="none" stroke="#b47b8d" stroke-width="5" stroke-linecap="round"/>
+<!-- 眉と目の外形 -->
+<path d="M382 363 Q407 341 436 360 Q444 368 433 370 L388 371 Q378 370 382 363Z" fill="#ad90a3" stroke="#795b71" stroke-width="4"/>
+<path d="M573 421 Q618 390 684 410" fill="none" stroke="#956b80" stroke-width="6" stroke-linecap="round"/>
+<path d="M321 467 Q333 425 385 417 Q438 412 459 455 Q468 484 447 522 Q420 548 381 540 Q338 532 326 505Z" fill="#fff6f6" stroke="#8d6477" stroke-width="4"/>
+<path d="M575 473 Q590 430 642 422 Q703 414 727 455 Q739 484 719 520 Q690 549 645 543 Q602 537 582 516Z" fill="#fff6f6" stroke="#8d6477" stroke-width="4"/>
+<g transform="translate(13 0)">
+<ellipse cx="391" cy="477" rx="43" ry="59" fill="url(#iris)" stroke="#326486" stroke-width="5"/>
+</g>
+<g transform="translate(13 0)">
+<ellipse cx="653" cy="477" rx="46" ry="59" fill="url(#iris)" stroke="#326486" stroke-width="5"/>
+</g>
+<g transform="translate(13 0)">
+<ellipse cx="378" cy="460" rx="10" ry="15" fill="#fff" transform="rotate(34 378 460)"/><ellipse cx="636" cy="458" rx="14" ry="19" fill="#fff" transform="rotate(37 636 458)"/>
+<circle cx="409" cy="469" r="3" fill="#d5f9ff"/><circle cx="417" cy="476" r="3" fill="#d5f9ff"/><circle cx="675" cy="466" r="3" fill="#d5f9ff"/><circle cx="683" cy="475" r="3" fill="#d5f9ff"/>
+<!-- 花を映す瞳 -->
+<path transform="translate(-34 -9)" d="M417 484 Q420 470 428 480 Q432 486 431 489 Q444 484 445 492 Q446 498 435 501 Q442 512 435 516 Q429 520 424 509 Q418 521 411 517 Q405 514 412 503 Q399 501 403 493 Q406 487 417 491Z" fill="#f7b8cd" stroke="#d17f9d" stroke-width="2"/>
+<path transform="translate(-21 -9)" d="M664 482 Q670 467 678 481 Q680 485 679 489 Q694 482 697 491 Q699 498 686 501 Q693 513 686 518 Q679 522 674 509 Q667 523 660 518 Q653 514 661 503 Q647 501 651 492 Q654 486 664 490Z" fill="#f7b8cd" stroke="#d17f9d" stroke-width="2"/>
+</g>
+<path d="M326 465 Q337 426 380 415 Q427 403 451 436 M575 465 Q595 424 640 417 Q693 405 720 443" fill="none" stroke="#624558" stroke-width="9" stroke-linecap="round"/>
+<path d="M328 458 Q316 456 310 447 M333 448 Q322 442 320 434 M718 443 Q730 442 737 434 M714 437 Q724 432 726 424" fill="none" stroke="#765166" stroke-width="4" stroke-linecap="round"/>
+
+<g id="mouth"><path d="M449 642 Q500 621 558 637 Q572 640 558 651 Q515 681 478 662 Q462 655 449 647Z" fill="#bd606a" stroke="#8b4c5a" stroke-width="5"/><ellipse id="mouth-open" cx="507" cy="647" rx="51" ry="3" fill="#582f44" stroke="#9a5062" stroke-width="4" opacity="0"/><ellipse id="tongue" cx="507" cy="655" rx="25" ry="5" fill="#ed9a9f" opacity="0"/></g>
+<!-- 前髪は帽子より手前、顔と耳に重なる -->
+<path d="M277 408 Q289 225 395 172 Q507 101 647 126 Q817 130 894 253 Q927 308 937 398 L934 470 Q910 447 883 455 Q867 457 848 470 Q809 475 779 450 Q736 425 694 409 Q647 391 625 341 Q573 390 520 373 Q454 356 420 274 Q405 338 365 368 Q326 398 277 408Z" fill="url(#hair)" stroke="#526775" stroke-width="6"/>
+<path d="M419 201 Q423 311 500 356 Q545 382 608 375 Q550 376 506 342 Q447 297 419 201Z" fill="#64758a" opacity=".64"/>
+<path d="M624 246 Q622 372 706 437 Q757 478 818 470 Q864 466 885 436 Q908 400 888 359 Q871 329 839 327 Q800 324 783 355 Q770 379 782 397 Q782 367 806 361 Q836 350 854 371 Q868 389 857 409 Q838 438 805 430 Q750 419 713 382 Q658 330 624 246Z" fill="#9dd9d0" stroke="#607b85" stroke-width="5"/>
+<path d="M632 244 Q637 342 704 406 Q751 451 800 453" fill="none" stroke="#c3ede1" stroke-width="10" opacity=".55"/>
+<path d="M316 313 Q337 235 386 200 M485 332 Q534 367 582 363" fill="none" stroke="#bae8e2" stroke-width="11" stroke-linecap="round" opacity=".45"/>
+<g fill="#efc2cc" opacity=".3"><circle cx="487" cy="244" r="15"/><circle cx="511" cy="258" r="23"/><circle cx="540" cy="269" r="16"/><circle cx="681" cy="288" r="20"/><circle cx="715" cy="299" r="26"/><circle cx="751" cy="306" r="19"/><circle cx="781" cy="277" r="18"/></g>
+<!-- 手前の指 -->
+<path d="M31 659 Q44 648 57 665 Q83 702 89 757 L100 850 Q130 825 157 815 Q168 816 178 839 Q192 822 207 818 Q231 808 253 816 Q258 821 248 830 L225 852 Q237 861 236 876 L221 922 Q217 936 204 938 L191 929 L176 959 L203 1000 H61 L47 982 Q38 974 49 961 L33 946 Q28 938 39 927 L66 899 Q53 861 51 825 L39 718 Q34 687 29 673 Q26 663 31 659Z" fill="#ffe0dc" stroke="#9b7280" stroke-width="6" stroke-linejoin="round"/>
+<path d="M53 921 Q100 877 157 842 M78 945 Q126 899 177 873 M110 960 Q150 926 194 904" fill="none" stroke="#b48491" stroke-width="5" stroke-linecap="round"/>
+<circle cx="869" cy="956" r="7" fill="#ffeef0" opacity=".8"/>
+</svg>
