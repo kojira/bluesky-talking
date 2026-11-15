@@ -3,14 +3,10 @@ const $=id=>document.getElementById(id), input=$('text'), status=$('status'), sp
 const initial=new URLSearchParams(location.search).get('text'); if(initial!==null)input.value=initial.slice(0,300);
 let tts,context,source,frame,run=0;
 function mouth(level=0){
- const doc=portrait.contentDocument;if(!doc)return;
- const open=doc.getElementById('mouth-open'),tongue=doc.getElementById('tongue');if(!open||!tongue)return;
- const amount=Math.max(0,Math.min(1,level));
- const half=1.25+26.25*amount;
- open.setAttribute('ry',String(half));
- // 舌は口の内部の下側にのみ配置する。
- if(half>5){const tongueHalf=Math.min(half*.22,5);tongue.setAttribute('cy',String(648.75+half*.55));tongue.setAttribute('ry',String(tongueHalf));tongue.setAttribute('opacity','1')}
- else tongue.setAttribute('opacity','0');
+ const path=portrait.contentDocument?.getElementById('mouth');if(!path)return;
+ const a=Math.max(0,Math.min(1,level));
+ // 静止時は元絵そのもの。発話時は同じパスの上下の制御点を開く。
+ path.setAttribute('d',`M449 642 Q500 ${621-7*a} 558 637 Q572 640 558 ${651+10*a} Q515 ${681+20*a} 478 ${662+12*a} Q462 ${655+5*a} 449 647Z`);
 }
 function cancel(){run++;if(source){try{source.stop()}catch{}source=null}cancelAnimationFrame(frame);mouth();stop.disabled=true;speak.disabled=false;}
 stop.onclick=()=>{cancel();status.textContent='停止しました。'};
