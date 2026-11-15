@@ -50,7 +50,7 @@
 <path d="M326 465 Q337 426 380 415 Q427 403 451 436 M575 465 Q595 424 640 417 Q693 405 720 443" fill="none" stroke="#624558" stroke-width="9" stroke-linecap="round"/>
 <path d="M328 458 Q316 456 310 447 M333 448 Q322 442 320 434 M718 443 Q730 442 737 434 M714 437 Q724 432 726 424" fill="none" stroke="#765166" stroke-width="4" stroke-linecap="round"/>
 
-<g id="mouth"><path d="M479 648 Q503.75 658 528 648" fill="none" stroke="#904150" stroke-width="3" stroke-linecap="round"/><ellipse id="mouth-open" cx="503.75" cy="650" rx="24" ry="0" fill="#904150"/><ellipse id="tongue" cx="503.75" cy="650" rx="14" ry="0" fill="#da767f" opacity="0"/></g>
+<g id="mouth" transform="translate(0 650) scale(1 0.03) translate(0 -650)"><path d="M449 642 Q500 621 558 637 Q572 640 558 651 Q515 681 478 662 Q462 655 449 647Z" fill="#bd606a" stroke="#8b4c5a" stroke-width="5"/></g>
 <!-- 前髪は帽子より手前、顔と耳に重なる -->
 <path d="M277 408 Q289 225 395 172 Q507 101 647 126 Q817 130 894 253 Q927 308 937 398 L934 470 Q910 447 883 455 Q867 457 848 470 Q809 475 779 450 Q736 425 694 409 Q647 391 625 341 Q573 390 520 373 Q454 356 420 274 Q405 338 365 368 Q326 398 277 408Z" fill="url(#hair)" stroke="#526775" stroke-width="6"/>
 <path d="M419 201 Q423 311 500 356 Q545 382 608 375 Q550 376 506 342 Q447 297 419 201Z" fill="#64758a" opacity=".64"/>

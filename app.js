@@ -13,13 +13,11 @@ const initial=new URLSearchParams(location.search).get('text'); if(initial!==nul
 let tts,context,source,frame,run=0;
 function mouth(level=0){
  const doc=portrait.contentDocument;if(!doc)return;
- const open=doc.getElementById('mouth-open'),tongue=doc.getElementById('tongue');if(!open||!tongue)return;
+ const shape=doc.getElementById('mouth');if(!shape)return;
  const amount=Math.max(0,Math.min(1,level));
- const ry=amount*15;
- open.setAttribute('ry',String(ry));
- tongue.setAttribute('cy',String(650+ry*.5));
- tongue.setAttribute('ry',String(ry*.25));
- tongue.setAttribute('opacity',amount>.2?'1':'0');
+ // Keep the original SVG path and its full width; compress only its height at rest.
+ const scale=.03+amount*.97;
+ shape.setAttribute('transform',`translate(0 650) scale(1 ${scale}) translate(0 -650)`);
 }
 function cancel(){run++;if(source){try{source.stop()}catch{}source=null}cancelAnimationFrame(frame);mouth();stop.disabled=true;speak.disabled=false;}
 stop.onclick=()=>{cancel();status.textContent='停止しました。'};
