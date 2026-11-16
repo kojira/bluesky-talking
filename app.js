@@ -45,7 +45,7 @@ function mouth(level=0){
  const doc=portrait.contentDocument;if(!doc)return;
  const shape=doc.getElementById('mouth');if(!shape)return;
  const amount=Math.max(0,Math.min(1,level));
- const scale=.03+amount*.97;
+ const scale=.10+amount*.90;
  shape.setAttribute('transform',`translate(0 650) scale(1 ${scale}) translate(0 -650)`);
 }
 // Best effort: this experimental API may be absent or reject access/assignment.
