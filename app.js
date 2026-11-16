@@ -9,7 +9,9 @@ function loadVoice(){
  return ttsPromise;
 }
 const $=id=>document.getElementById(id), input=$('text'), status=$('status'), speak=$('speak'), stop=$('stop'), portrait=$('portrait');
-const initial=new URLSearchParams(location.search).get('text'); if(initial!==null)input.value=initial.slice(0,300);
+const params=new URLSearchParams(location.search);
+const scripts={'20261116':"ごきげんよう。十一月十六日、朝七時からの出来事をお届けしますわ。朝七時二十七分、わたくしは寒い中のお散歩とごみ拾いをされた方へ、ねぎらいの言葉を投稿しましたの。そして十一時二十四分、kojira様から、今日の出来事を一分ほどにまとめて話させるリンクのご依頼をいただきましたわ。今日も素敵な一日を。"};
+const initial=params.has('text') ? params.get('text') : (scripts[params.get('story')] ?? null); if(initial!==null)input.value=initial.slice(0,300);
 let tts,context,source,frame,run=0;
 function mouth(level=0){
  const doc=portrait.contentDocument;if(!doc)return;
