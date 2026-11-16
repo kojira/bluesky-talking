@@ -15,15 +15,6 @@
 <path d="M35 0H115Q-1 158 75 272Q-36 188 35 0M680 0H774Q895 101 1010 143V235Q826 139 680 0" fill="#d3a4ad"/>
 <path d="M771-6Q861 79 1008 143" fill="none" stroke="#f3f4db" stroke-width="15"/>
 <path d="M791-8Q887 22 950 105Q860 61 791-8" fill="#d2a3ad" stroke="#656366" stroke-width="3"/>
-<!-- An @-shaped castle among the clouds, behind the portrait -->
-<g opacity=".94" stroke-linejoin="round">
- <path d="M27 362V252l22-28 22 28v110 M157 375V228l22-29 22 29v147 M45 291h136 M45 291v-20h18v20h18v-20h18v20h18v-20h18v20h18v-20h18v20" fill="#e7d9ce" stroke="#d6b1bc" stroke-width="6"/>
- <path d="M25 252l24-40 24 40M155 228l24-42 24 42" fill="#c987a7" stroke="#f6e9df" stroke-width="5"/>
- <path d="M66 356v-25q0-14 12-14t12 14v25m35 0v-25q0-14 12-14t12 14v25" fill="#72b6ce" stroke="#fff2df" stroke-width="4"/>
- <path d="M242 433C119 451 49 408 49 329C49 251 116 192 195 192C278 192 321 243 311 307C306 343 285 360 265 355C245 351 244 331 251 297L260 255M252 286C242 258 219 250 197 257C162 268 148 306 158 332C166 354 188 361 208 352C229 343 239 321 245 301" fill="none" stroke="#f7e9d9" stroke-width="15" stroke-linecap="round"/>
- <path d="M243 433C119 451 49 408 49 329C49 251 116 192 195 192C278 192 321 243 311 307C306 343 285 360 265 355C245 351 244 331 251 297L260 255M252 286C242 258 219 250 197 257C162 268 148 306 158 332C166 354 188 361 208 352C229 343 239 321 245 301" fill="none" stroke="#d39eb7" stroke-width="5" stroke-linecap="round"/>
- <path d="M-20 411Q20 387 49 406Q77 375 110 399Q142 380 166 400Q192 390 215 412L229 438H-20Z" fill="#d8f3ed" opacity=".9"/>
-</g>
 <!-- back hair mass -->
 <path d="M276 363Q313 203 418 175Q560 97 711 135Q913 177 939 386L933 613Q938 772 1016 865V1010H341Q406 896 364 711L287 574Z" fill="#697d90" stroke="#374953" stroke-width="5"/>
 <path d="M884 458Q929 535 912 631Q913 779 1010 859V927Q875 850 860 651Z" fill="url(#lock)"/>
