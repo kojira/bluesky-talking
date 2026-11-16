@@ -48,9 +48,16 @@ function mouth(level=0){
  const scale=.03+amount*.97;
  shape.setAttribute('transform',`translate(0 650) scale(1 ${scale}) translate(0 -650)`);
 }
-function cancel(){run++;if(source){try{source.stop()}catch{}source=null}cancelAnimationFrame(frame);mouth();stop.disabled=true;speak.disabled=false;}
+// Best effort: this experimental API may be absent or reject access/assignment.
+// Return to auto when this app is idle so it does not retain the playback category.
+function setAudioSessionType(type){
+ try{if('audioSession' in navigator && navigator.audioSession)navigator.audioSession.type=type}
+ catch(error){console.warn('Audio Session API:',error)}
+}
+function cancel(){run++;if(source){try{source.stop()}catch{}source=null}cancelAnimationFrame(frame);mouth();setAudioSessionType('auto');stop.disabled=true;speak.disabled=false;}
 stop.onclick=()=>{cancel();status.textContent='停止しました。'};
 speak.onclick=async()=>{const text=input.value.trim();if(!text){status.textContent='お話しする言葉を入力してください。';return}cancel();const id=run;speak.disabled=true;stop.disabled=false;try{
+ setAudioSessionType('playback');
  context ||= new AudioContext(); if(!navigator.userActivation?.isActive && context.state!=='running') throw Error('自動再生が制限されています。「お話しする」ボタンを押してください。'); await context.resume(); if(id!==run)return; if(context.state!=='running')throw Error('音声の再生が許可されませんでした。もう一度ボタンを押してください。');
  status.textContent='声を準備しています…';const tts=await loadVoice();if(id!==run)return;
  const chunks=splitText(text);let totalDuration=0;
@@ -71,7 +78,7 @@ speak.onclick=async()=>{const text=input.value.trim();if(!text){status.textConte
   if(id!==run)return;cancelAnimationFrame(frame);source=null;node.disconnect();analyser.disconnect();mouth();
   if(upcoming)next=upcoming.then(outcome=>{if(outcome.error)throw outcome.error;return outcome.value});
  }
- speak.disabled=false;stop.disabled=true;status.textContent=`お話しが終わりました。（${chunks.length}区間・音声 ${totalDuration.toFixed(1)}秒）`;
+ setAudioSessionType('auto');speak.disabled=false;stop.disabled=true;status.textContent=`お話しが終わりました。（${chunks.length}区間・音声 ${totalDuration.toFixed(1)}秒）`;
  }catch(e){if(id!==run)return;cancel();status.textContent='音声を再生できませんでした：'+e.message;console.error(e)}};
 
 if(initial !== null && input.value.trim()){ status.textContent='自動再生を試みています。制限される場合は「お話しする」を押してください。'; speak.click(); }
