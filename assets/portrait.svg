@@ -51,7 +51,7 @@
 <path d="M328 458 Q316 456 310 447 M333 448 Q322 442 320 434 M718 443 Q730 442 737 434 M714 437 Q724 432 726 424" fill="none" stroke="#765166" stroke-width="4" stroke-linecap="round"/>
 
 <!-- 左側光源に合わせた控えめな鼻の陰影 -->
-<path d="M522 548 Q524 567 533 581 Q537 587 546 589" fill="none" stroke="#b87e7e" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+<path d="M540 551 Q536 568 525 579 Q521 583 516 584" fill="none" stroke="#b87e7e" stroke-width="4" stroke-linecap="round" opacity=".65"/>
 <g id="mouth" transform="translate(0 650) scale(1 0.10) translate(0 -650)"><path d="M430 642 Q495 621 570 637 Q588 640 570 651 Q514 681 467 662 Q447 655 430 647Z" fill="#bd606a" stroke="#8b4c5a" stroke-width="5"/></g>
 <!-- 前髪は帽子より手前、顔と耳に重なる -->
 <path d="M277 408 Q289 225 395 172 Q507 101 647 126 Q817 130 894 253 Q927 308 937 398 L934 470 Q910 447 883 455 Q867 457 848 470 Q809 475 779 450 Q736 425 694 409 Q647 391 625 341 Q573 390 520 373 Q454 356 420 274 Q405 338 365 368 Q326 398 277 408Z" fill="url(#hair)" stroke="#526775" stroke-width="6"/>
