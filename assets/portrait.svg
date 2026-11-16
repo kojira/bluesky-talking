@@ -8,8 +8,13 @@
  <linearGradient id="hat"><stop stop-color="#f7f6d9"/><stop offset=".2" stop-color="#d2b7b4"/><stop offset=".4" stop-color="#ad9c96"/></linearGradient>
  <filter id="blur"><feGaussianBlur stdDeviation="13"/></filter>
 </defs>
-<rect width="1000" height="1000" fill="url(#sky)"/>
-<g fill="none" stroke-linecap="round" filter="url(#blur)"><path d="M-40 405Q80 355 200 420T360 454M-10 853Q110 910 290 830" stroke="#7fdef1" stroke-width="92"/><path d="M-40 633Q48 568 104 649T269 640" stroke="#f7e99a" stroke-width="90"/><path d="M-20 371Q113 377 180 419" stroke="#07b9f3" stroke-width="50"/></g>
+<!-- AT Protocolにちなむ巨大な@。人物と帽子の背後で画面外へ続く -->
+<rect width="1000" height="1000" fill="#174d68"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M255 211 C34 216 -84 379 -58 604 C-35 811 110 936 315 929 C433 925 524 873 579 807" stroke="#70d8ed" stroke-width="78" opacity=".72"/>
+ <path d="M255 211 C34 216 -84 379 -58 604 C-35 811 110 936 315 929 C433 925 524 873 579 807" stroke="#d5f8fa" stroke-width="8" opacity=".46"/>
+ <path d="M348 471 C295 415 204 424 155 485 C103 550 107 648 165 694 C222 738 302 711 335 648 L350 455 L336 639 C329 719 380 738 425 697" stroke="#70d8ed" stroke-width="60" opacity=".72"/>
+</g>
 <!-- Large pale pink brim, cropped at top -->
 <path d="M-14-30H807Q912 13 959 109L1023 135V642Q871 557 783 436Q506 380 272 359Q82 342 7 197Q-26 107 36-16" fill="url(#hat)" stroke="#344750" stroke-width="4"/>
 <path d="M35 0H115Q-1 158 75 272Q-36 188 35 0M680 0H774Q895 101 1010 143V235Q826 139 680 0" fill="#d3a4ad"/>
