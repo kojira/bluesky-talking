@@ -43,10 +43,11 @@ function splitText(text, limit=100){
 }
 function mouth(level=0){
  const doc=portrait.contentDocument;if(!doc)return;
- const shape=doc.getElementById('mouth');if(!shape)return;
+ const open=doc.getElementById('mouth-open'), closed=doc.getElementById('mouth-closed');if(!open||!closed)return;
  const amount=Math.max(0,Math.min(1,level));
- const scale=.10+amount*.90;
- shape.setAttribute('transform',`translate(0 650) scale(1 ${scale}) translate(0 -650)`);
+ open.setAttribute('opacity', amount > .025 ? '1' : '0');
+ open.setAttribute('transform', `translate(0 640) scale(1 ${Math.max(.04,amount)}) translate(0 -640)`);
+ closed.setAttribute('opacity', amount > .025 ? '0' : '1');
 }
 // Best effort: this experimental API may be absent or reject access/assignment.
 // Return to auto when this app is idle so it does not retain the playback category.

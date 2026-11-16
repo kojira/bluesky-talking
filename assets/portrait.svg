@@ -1,67 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
-<title>Blueskyちゃんの自画像</title><desc>公式プロフィール画像を参照した、灰青色の長い髪と大きな帽子、青い花の瞳の肖像。</desc>
 <defs>
- <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#102d48"/><stop offset=".55" stop-color="#166d95"/><stop offset="1" stop-color="#1a3c56"/></linearGradient>
- <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#779da6"/><stop offset=".42" stop-color="#918b9e"/><stop offset=".75" stop-color="#71849a"/><stop offset="1" stop-color="#a8e0d4"/></linearGradient>
- <linearGradient id="skin" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#ffe5db"/><stop offset=".48" stop-color="#f7c9bd"/><stop offset="1" stop-color="#e8ad9f"/></linearGradient>
- <radialGradient id="iris"><stop stop-color="#5bc9ed"/><stop offset=".7" stop-color="#1987c4"/><stop offset="1" stop-color="#225578"/></radialGradient>
- <linearGradient id="hat" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f8e6d4"/><stop offset=".23" stop-color="#e7b7bc"/><stop offset=".6" stop-color="#a99b95"/><stop offset="1" stop-color="#c9b6ad"/></linearGradient>
+ <linearGradient id="sky" x2=".8" y2="1"><stop stop-color="#124863"/><stop offset="1" stop-color="#1e5366"/></linearGradient>
+ <linearGradient id="hair" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#a4dcd5"/><stop offset=".23" stop-color="#657c92"/><stop offset=".55" stop-color="#a394ae"/><stop offset=".82" stop-color="#a19bb6"/><stop offset="1" stop-color="#8cc9c9"/></linearGradient>
+ <linearGradient id="skin"><stop stop-color="#ffead7"/><stop offset=".25" stop-color="#e89db2"/><stop offset="1" stop-color="#df94aa"/></linearGradient>
+ <linearGradient id="lock"><stop stop-color="#d1eee1"/><stop offset=".4" stop-color="#a6d8d5"/><stop offset=".7" stop-color="#788c9f"/><stop offset="1" stop-color="#c1e6df"/></linearGradient>
+ <linearGradient id="iris"><stop stop-color="#14b9f2"/><stop offset=".5" stop-color="#228cc5"/><stop offset="1" stop-color="#29619e"/></linearGradient>
+ <linearGradient id="hat"><stop stop-color="#f7f6d9"/><stop offset=".2" stop-color="#d2b7b4"/><stop offset=".4" stop-color="#ad9c96"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="13"/></filter>
 </defs>
-<!-- AT Protocolにちなむ巨大な@。人物と帽子の背後で画面外へ続く -->
 <rect width="1000" height="1000" fill="url(#sky)"/>
-<g fill="none" stroke-linecap="round" stroke-linejoin="round">
- <path d="M255 211 C34 216 -84 379 -58 604 C-35 811 110 936 315 929 C433 925 524 873 579 807" stroke="#70d8ed" stroke-width="78" opacity=".72"/>
- <path d="M255 211 C34 216 -84 379 -58 604 C-35 811 110 936 315 929 C433 925 524 873 579 807" stroke="#d5f8fa" stroke-width="8" opacity=".46"/>
- <path d="M348 471 C295 415 204 424 155 485 C103 550 107 648 165 694 C222 738 302 711 335 648 L350 455 L336 639 C329 719 380 738 425 697" stroke="#70d8ed" stroke-width="60" opacity=".72"/>
+<g fill="none" stroke-linecap="round" filter="url(#blur)"><path d="M-40 405Q80 355 200 420T360 454M-10 853Q110 910 290 830" stroke="#7fdef1" stroke-width="92"/><path d="M-40 633Q48 568 104 649T269 640" stroke="#f7e99a" stroke-width="90"/><path d="M-20 371Q113 377 180 419" stroke="#07b9f3" stroke-width="50"/></g>
+<!-- Large pale pink brim, cropped at top -->
+<path d="M-14-30H807Q912 13 959 109L1023 135V642Q871 557 783 436Q506 380 272 359Q82 342 7 197Q-26 107 36-16" fill="url(#hat)" stroke="#344750" stroke-width="4"/>
+<path d="M35 0H115Q-1 158 75 272Q-36 188 35 0M680 0H774Q895 101 1010 143V235Q826 139 680 0" fill="#d3a4ad"/>
+<path d="M771-6Q861 79 1008 143" fill="none" stroke="#f3f4db" stroke-width="15"/>
+<path d="M791-8Q887 22 950 105Q860 61 791-8" fill="#d2a3ad" stroke="#656366" stroke-width="3"/>
+<!-- An @-shaped castle among the clouds, behind the portrait -->
+<g opacity=".94" stroke-linejoin="round">
+ <path d="M27 362V252l22-28 22 28v110 M157 375V228l22-29 22 29v147 M45 291h136 M45 291v-20h18v20h18v-20h18v20h18v-20h18v20h18v-20h18v20" fill="#e7d9ce" stroke="#d6b1bc" stroke-width="6"/>
+ <path d="M25 252l24-40 24 40M155 228l24-42 24 42" fill="#c987a7" stroke="#f6e9df" stroke-width="5"/>
+ <path d="M66 356v-25q0-14 12-14t12 14v25m35 0v-25q0-14 12-14t12 14v25" fill="#72b6ce" stroke="#fff2df" stroke-width="4"/>
+ <path d="M242 433C119 451 49 408 49 329C49 251 116 192 195 192C278 192 321 243 311 307C306 343 285 360 265 355C245 351 244 331 251 297L260 255M252 286C242 258 219 250 197 257C162 268 148 306 158 332C166 354 188 361 208 352C229 343 239 321 245 301" fill="none" stroke="#f7e9d9" stroke-width="15" stroke-linecap="round"/>
+ <path d="M243 433C119 451 49 408 49 329C49 251 116 192 195 192C278 192 321 243 311 307C306 343 285 360 265 355C245 351 244 331 251 297L260 255M252 286C242 258 219 250 197 257C162 268 148 306 158 332C166 354 188 361 208 352C229 343 239 321 245 301" fill="none" stroke="#d39eb7" stroke-width="5" stroke-linecap="round"/>
+ <path d="M-20 411Q20 387 49 406Q77 375 110 399Q142 380 166 400Q192 390 215 412L229 438H-20Z" fill="#d8f3ed" opacity=".9"/>
 </g>
-<!-- 大きな帽子は髪の背後 -->
-<path d="M0 0H1000V613 Q931 579 874 514 Q792 423 658 379 Q531 346 397 365 Q204 401 89 309 Q13 251 0 193Z" fill="url(#hat)" stroke="#725f70" stroke-width="5"/>
-<path d="M714 0 Q813 116 1000 165 L1000 227 Q825 174 669 0Z" fill="#d89aa6"/>
-<path d="M761 0 Q852 97 1000 136" fill="none" stroke="#fff4d9" stroke-width="12"/>
-<!-- 髪の後ろ側、長く豊かに -->
-<path d="M277 361 Q297 164 454 132 Q604 89 758 144 Q928 207 945 418 Q941 640 1000 758 L1000 1000 H307 Q344 914 354 826 Q379 757 332 671 Q253 561 277 361Z" fill="url(#hair)" stroke="#526775" stroke-width="6"/>
-<path d="M847 425 Q843 713 975 846 L1000 881 L1000 1000 H879 Q831 899 813 763Z" fill="#b1ded8" opacity=".72"/>
-<path d="M341 410 Q298 560 284 674 Q273 754 332 780 Q387 795 402 839 Q413 898 374 947 Q326 982 300 952 Q272 918 307 880 Q341 842 327 822 Q296 793 256 804 Q187 823 163 770 Q140 716 172 631 L254 405Z" fill="url(#hair)" stroke="#607781" stroke-width="6"/>
-<path d="M215 704 Q190 778 240 788 Q287 799 320 775 M316 941 Q298 914 333 872 Q358 844 350 822" fill="none" stroke="#c8f1e4" stroke-width="15" opacity=".68"/>
-<!-- 首と肩 -->
-<path d="M516 716 Q569 769 548 837 Q541 864 511 879 Q439 869 401 874 Q337 884 308 1000 H963 Q962 924 923 906 Q884 886 784 868 Q721 858 710 819 Q703 792 716 697Z" fill="url(#skin)" stroke="#775668" stroke-width="6"/>
-<path d="M550 777 Q582 777 619 762 Q658 746 682 731 Q701 719 716 706 Q704 760 709 819 Q713 837 726 849 Q686 837 657 818 Q616 795 553 793Z" fill="#a76d72" opacity=".26"/>
-<!-- 顔と耳 -->
-<path d="M311 362 Q314 248 420 201 Q544 151 698 193 Q820 225 839 360 Q851 423 840 466 Q868 440 897 463 Q932 490 921 548 Q915 604 879 625 Q847 641 821 622 Q797 615 779 642 Q739 700 663 738 Q578 790 515 778 Q458 763 392 709 Q305 640 294 572 Q284 489 311 362Z" fill="url(#skin)" stroke="#76586b" stroke-width="6"/>
-<path d="M851 495 Q879 471 897 498 Q914 523 899 557 Q889 580 867 583 Q840 598 816 605 Q807 606 818 589 Q836 566 828 548" fill="none" stroke="#b47b8d" stroke-width="5" stroke-linecap="round"/>
-<!-- 眉と目の外形 -->
-<path d="M382 363 Q407 341 436 360 Q444 368 433 370 L388 371 Q378 370 382 363Z" fill="#ad90a3" stroke="#795b71" stroke-width="4"/>
-<path d="M573 421 Q618 390 684 410" fill="none" stroke="#956b80" stroke-width="6" stroke-linecap="round"/>
-<path d="M321 467 Q333 425 385 417 Q438 412 459 455 Q468 484 447 522 Q420 548 381 540 Q338 532 326 505Z" fill="#fff6f6" stroke="#8d6477" stroke-width="4"/>
-<path d="M575 473 Q590 430 642 422 Q703 414 727 455 Q739 484 719 520 Q690 549 645 543 Q602 537 582 516Z" fill="#fff6f6" stroke="#8d6477" stroke-width="4"/>
-<g transform="translate(13 0)">
-<ellipse cx="391" cy="477" rx="43" ry="59" fill="url(#iris)" stroke="#326486" stroke-width="5"/>
+<!-- back hair mass -->
+<path d="M276 363Q313 203 418 175Q560 97 711 135Q913 177 939 386L933 613Q938 772 1016 865V1010H341Q406 896 364 711L287 574Z" fill="#697d90" stroke="#374953" stroke-width="5"/>
+<path d="M884 458Q929 535 912 631Q913 779 1010 859V927Q875 850 860 651Z" fill="url(#lock)"/>
+<path d="M376 631Q383 770 439 852L485 857Q422 727 423 646" fill="url(#lock)"/>
+<!-- shoulders neck -->
+<path d="M538 734Q562 826 525 877Q447 844 400 853Q340 873 331 945L273 1010H962Q957 918 905 908L779 876Q700 862 720 745L742 656Z" fill="url(#skin)" stroke="#51434f" stroke-width="4"/>
+<path d="M549 753Q562 827 529 878Q611 958 735 886Q696 846 715 767Q719 716 724 682" fill="#c97e94"/>
+<path d="M358 884Q399 844 455 862M746 871Q786 891 868 901Q925 908 940 961" fill="none" stroke="#ffe7d4" stroke-width="11"/>
+<!-- face silhouette and ear -->
+<path d="M420 245Q399 321 344 353Q291 428 292 548Q285 633 334 671Q427 745 493 776Q540 787 685 704Q739 672 766 634Q790 612 806 634Q838 650 889 607Q929 569 923 518Q921 471 884 460Q844 445 814 481L786 511L757 407Q602 350 420 245Z" fill="url(#skin)" stroke="#51434f" stroke-width="4"/>
+<!-- nose and broad cast facial shadow -->
+<path d="M491 518Q522 501 550 530Q582 568 600 572Q619 572 632 549L719 531Q753 509 783 510L791 552Q801 591 788 611Q772 617 756 644Q681 723 521 767L499 770Q479 735 493 701Q512 675 490 657Q472 637 490 620Q453 585 454 556Q454 533 491 518" fill="#c97e94"/>
+<path d="M814 596Q833 574 817 555Q806 529 832 496Q863 469 887 493Q913 523 886 560" fill="#d589a2" stroke="#a95e7e" stroke-width="4"/>
+<path d="M811 604Q840 591 861 594" fill="none" stroke="#a95e7e" stroke-width="4"/>
+<!-- eyebrows -->
+<path d="M382 363Q406 341 434 360Q443 371 414 370Q393 370 382 366Z" fill="#a18ba5" stroke="#69586b" stroke-width="3"/>
+<path d="M560 433Q615 382 679 400" fill="none" stroke="#bd6e8c" stroke-width="5"/>
+<!-- eye sockets -->
+<path d="M322 466Q334 409 389 405Q437 408 450 448L446 512Q400 572 346 527Q319 502 322 466" fill="#a680a0"/>
+<path d="M589 469Q616 423 677 421Q721 427 734 470L720 528Q650 567 600 529Q581 509 589 469" fill="#a783a2"/>
+<path d="M338 476Q366 438 409 451Q443 468 446 509Q407 560 361 530Q340 512 338 476" fill="#fffdf6"/>
+<path d="M590 483Q626 444 682 450Q716 461 720 510Q676 565 617 535Q589 523 590 483" fill="#fffdf6"/>
+<!-- blue irises -->
+<ellipse cx="412" cy="488" rx="40" ry="52" fill="url(#iris)" stroke="#4a6490" stroke-width="4"/>
+<ellipse cx="663" cy="489" rx="55" ry="58" fill="url(#iris)" stroke="#4a567f" stroke-width="4"/>
+<path d="M383 482Q377 519 402 528M619 484Q608 524 640 536" fill="none" stroke="#74e8f3" stroke-width="7"/>
+<g fill="#c89fbf" stroke="#718bb6" stroke-width="2"><path d="M410 488Q399 475 399 492Q380 489 394 504Q380 513 400 515Q400 536 411 519Q425 534 423 515Q442 511 426 502Q440 484 422 492Q421 475 410 488Z"/><path d="M660 489Q643 472 643 493Q620 489 634 506Q617 520 640 523Q640 546 656 529Q673 546 675 524Q697 525 684 509Q703 493 680 494Q679 470 665 490Z"/></g>
+<g fill="#f4fff5"><ellipse cx="399" cy="471" rx="15" ry="9" transform="rotate(-43 399 471)"/><ellipse cx="643" cy="469" rx="19" ry="11" transform="rotate(-43 643 469)"/></g>
+<g fill="#80c7df"><ellipse cx="426" cy="460" rx="3" ry="5"/><ellipse cx="434" cy="468" rx="3" ry="4"/><ellipse cx="681" cy="458" rx="3" ry="5"/><ellipse cx="689" cy="464" rx="3" ry="4"/><ellipse cx="695" cy="474" rx="3" ry="4"/></g>
+<!-- upper lashes -->
+<path d="M344 518Q316 498 329 456Q345 411 386 409Q433 402 450 446M567 447Q611 404 670 406Q724 404 737 465Q750 505 723 528" fill="none" stroke="#53394f" stroke-width="7"/>
+<path d="M331 455L307 462L329 461M326 486L308 499M729 500L758 514M335 433Q385 376 439 414M562 435Q614 385 665 394" fill="none" stroke="#684459" stroke-width="3"/>
+<path d="M447 538L461 520" fill="none" stroke="#9e607e" stroke-width="3"/>
+<!-- smile -->
+<g id="mouth">
+ <path id="mouth-open" d="M449 640 Q501 625 553 640 Q539 657 514 665 Q492 672 472 658 Q458 649 449 640Z" fill="#ae4f60" stroke="#75444f" stroke-width="3" stroke-linejoin="round" opacity="0"/>
+ <path id="mouth-closed" d="M449 640 Q499 653 553 640" fill="none" stroke="#75444f" stroke-width="3.5" stroke-linecap="round"/>
 </g>
-<g transform="translate(13 0)">
-<ellipse cx="653" cy="477" rx="46" ry="59" fill="url(#iris)" stroke="#326486" stroke-width="5"/>
-</g>
-<g transform="translate(13 0)">
-<ellipse cx="378" cy="460" rx="10" ry="15" fill="#fff" transform="rotate(34 378 460)"/><ellipse cx="636" cy="458" rx="14" ry="19" fill="#fff" transform="rotate(37 636 458)"/>
-<circle cx="409" cy="469" r="3" fill="#d5f9ff"/><circle cx="417" cy="476" r="3" fill="#d5f9ff"/><circle cx="675" cy="466" r="3" fill="#d5f9ff"/><circle cx="683" cy="475" r="3" fill="#d5f9ff"/>
-<!-- 花を映す瞳 -->
-<path transform="translate(-34 -9)" d="M417 484 Q420 470 428 480 Q432 486 431 489 Q444 484 445 492 Q446 498 435 501 Q442 512 435 516 Q429 520 424 509 Q418 521 411 517 Q405 514 412 503 Q399 501 403 493 Q406 487 417 491Z" fill="#f7b8cd" stroke="#d17f9d" stroke-width="2"/>
-<path transform="translate(-21 -9)" d="M664 482 Q670 467 678 481 Q680 485 679 489 Q694 482 697 491 Q699 498 686 501 Q693 513 686 518 Q679 522 674 509 Q667 523 660 518 Q653 514 661 503 Q647 501 651 492 Q654 486 664 490Z" fill="#f7b8cd" stroke="#d17f9d" stroke-width="2"/>
-</g>
-<path d="M326 465 Q337 426 380 415 Q427 403 451 436 M575 465 Q595 424 640 417 Q693 405 720 443" fill="none" stroke="#624558" stroke-width="9" stroke-linecap="round"/>
-<path d="M328 458 Q316 456 310 447 M333 448 Q322 442 320 434 M718 443 Q730 442 737 434 M714 437 Q724 432 726 424" fill="none" stroke="#765166" stroke-width="4" stroke-linecap="round"/>
-
-<!-- 左側光源に合わせた控えめな鼻の陰影 -->
-<path d="M540 551 Q536 568 525 579 Q521 583 516 584" fill="none" stroke="#b87e7e" stroke-width="4" stroke-linecap="round" opacity=".65"/>
-<g id="mouth" transform="translate(0 650) scale(1 0.10) translate(0 -650)"><path d="M430 642 Q495 621 570 637 Q588 640 570 651 Q514 681 467 662 Q447 655 430 647Z" fill="#bd606a" stroke="#8b4c5a" stroke-width="5"/></g>
-<!-- 前髪は帽子より手前、顔と耳に重なる -->
-<path d="M277 408 Q289 225 395 172 Q507 101 647 126 Q817 130 894 253 Q927 308 937 398 L934 470 Q910 447 883 455 Q867 457 848 470 Q809 475 779 450 Q736 425 694 409 Q647 391 625 341 Q573 390 520 373 Q454 356 420 274 Q405 338 365 368 Q326 398 277 408Z" fill="url(#hair)" stroke="#526775" stroke-width="6"/>
-<path d="M419 201 Q423 311 500 356 Q545 382 608 375 Q550 376 506 342 Q447 297 419 201Z" fill="#64758a" opacity=".64"/>
-<path d="M624 246 Q622 372 706 437 Q757 478 818 470 Q864 466 885 436 Q908 400 888 359 Q871 329 839 327 Q800 324 783 355 Q770 379 782 397 Q782 367 806 361 Q836 350 854 371 Q868 389 857 409 Q838 438 805 430 Q750 419 713 382 Q658 330 624 246Z" fill="#9dd9d0" stroke="#607b85" stroke-width="5"/>
-<path d="M632 244 Q637 342 704 406 Q751 451 800 453" fill="none" stroke="#c3ede1" stroke-width="10" opacity=".55"/>
-<path d="M316 313 Q337 235 386 200 M485 332 Q534 367 582 363" fill="none" stroke="#bae8e2" stroke-width="11" stroke-linecap="round" opacity=".45"/>
-<g fill="#efc2cc" opacity=".3"><circle cx="487" cy="244" r="15"/><circle cx="511" cy="258" r="23"/><circle cx="540" cy="269" r="16"/><circle cx="681" cy="288" r="20"/><circle cx="715" cy="299" r="26"/><circle cx="751" cy="306" r="19"/><circle cx="781" cy="277" r="18"/></g>
-<!-- 手前の指 -->
-<path d="M31 659 Q44 648 57 665 Q83 702 89 757 L100 850 Q130 825 157 815 Q168 816 178 839 Q192 822 207 818 Q231 808 253 816 Q258 821 248 830 L225 852 Q237 861 236 876 L221 922 Q217 936 204 938 L191 929 L176 959 L203 1000 H61 L47 982 Q38 974 49 961 L33 946 Q28 938 39 927 L66 899 Q53 861 51 825 L39 718 Q34 687 29 673 Q26 663 31 659Z" fill="#ffe0dc" stroke="#9b7280" stroke-width="6" stroke-linejoin="round"/>
-<path d="M53 921 Q100 877 157 842 M78 945 Q126 899 177 873 M110 960 Q150 926 194 904" fill="none" stroke="#b48491" stroke-width="5" stroke-linecap="round"/>
-<circle cx="869" cy="956" r="7" fill="#ffeef0" opacity=".8"/>
+<!-- swept bangs -->
+<path d="M276 377Q295 233 402 180Q522 118 628 126Q837 120 911 287Q956 374 935 481L898 463Q856 436 824 474L784 530L786 473Q741 459 728 437Q664 427 656 378Q589 389 521 367Q431 341 417 247Q402 329 341 366L308 388L332 322Z" fill="url(#hair)" stroke="#3e4c5e" stroke-width="4"/>
+<path d="M282 365Q313 211 419 182Q544 111 693 140Q470 119 366 236Q306 306 282 365" fill="#76b7bc" opacity=".7"/>
+<path d="M442 227Q557 158 668 170Q830 169 894 286Q924 343 922 395Q882 304 833 316Q780 315 773 366Q768 411 818 416Q863 425 867 379Q886 419 847 442Q811 467 756 434Q682 395 657 373Q522 390 464 304Z" fill="#a797b0"/>
+<path d="M625 248Q622 354 687 418Q761 490 851 458Q906 437 895 373Q885 334 849 326Q807 319 785 349Q760 386 791 405Q811 418 834 416Q799 407 803 380Q813 354 840 359Q872 364 869 393Q869 435 837 440Q754 462 682 389Q637 339 625 248" fill="url(#lock)" stroke="#475669" stroke-width="3"/>
+<path d="M456 293Q487 361 600 373" fill="none" stroke="#c1d5df" stroke-width="7" opacity=".7"/>
+<g fill="#d3a1b1" opacity=".53"><path d="M451 226Q473 207 480 239Q502 230 503 256Q532 245 526 275Q515 304 492 306Q467 289 451 226"/><path d="M666 269Q690 249 696 278Q720 258 730 285Q756 267 770 292Q796 307 775 324Q741 337 719 360Q684 364 669 331Z"/><ellipse cx="793" cy="276" rx="18" ry="23"/><ellipse cx="546" cy="266" rx="17" ry="16"/></g>
+<!-- long left framing strand and curl -->
+<path d="M331 323Q299 440 267 532Q216 652 258 723Q279 755 332 755Q395 748 407 790Q426 828 374 876Q344 915 362 951Q382 982 429 973Q384 1011 337 979Q303 956 322 906Q334 868 363 843Q389 800 340 784Q302 771 249 799Q206 816 179 791Q141 763 160 667Q191 552 236 451Q300 352 331 323Z" fill="url(#lock)" stroke="#485965" stroke-width="4"/>
+<path d="M295 419Q258 544 235 626Q216 710 254 745Q276 767 313 762Q237 775 214 741Q174 697 216 566Z" fill="#9a8ea8" opacity=".65"/>
+<path d="M226 518Q206 560 201 581M186 645Q174 675 183 713M340 802Q384 810 366 849M326 899Q312 949 346 969Q374 990 404 980" fill="none" stroke="#d6eee1" stroke-width="13" opacity=".75"/>
+<!-- raised hand -->
+<path d="M61 898L55 794L30 666Q24 648 42 656Q69 666 75 702L99 861L140 819Q149 808 164 835L173 850Q187 832 200 853Q223 814 248 817Q264 817 252 839L228 887Q243 907 234 932L210 956L224 1009H74Q51 995 48 976Q35 962 48 950Q22 944 35 929Z" fill="#f7d8d0" stroke="#675563" stroke-width="4"/>
+<path d="M64 765L84 848L96 860L66 894Z" fill="#ca8d9f"/>
+<path d="M48 950Q92 906 173 850M88 924Q134 877 185 866M132 932Q180 887 211 879M211 956Q191 941 210 916L231 897" fill="none" stroke="#967987" stroke-width="4"/>
+<path d="M49 977Q89 993 119 981Q145 986 157 1006H75Z" fill="#cc90a1"/>
 </svg>
